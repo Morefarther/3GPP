@@ -1,0 +1,14 @@
+L->MIB 
+    Message
+        Version = 17
+        Physical_Cell_ID = 203
+        Freq = 2506
+        SFN = 800
+        SFN_MSB4 = 12
+        HSFN_LSB2 = 1
+        Sib1_BR_Sch_Info = 2
+        Sys_Info_Value_Tag = 0
+        Access_Barring_Enabled = 0
+        Op_Mode_Type = STANDALONE(3)
+        Dummy = 0
+        Num_TxAntennas = 48

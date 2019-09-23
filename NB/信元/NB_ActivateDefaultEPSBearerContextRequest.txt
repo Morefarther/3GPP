@@ -1,0 +1,31 @@
+L->ActivateDefaultEPSBearerContextRequest
+    L3Message
+        dir = DOWNLINK
+        message
+            ProtocolDiscriminator = 2
+            EPSBearerIdentity = 5
+            ProcedureTransactionIdentity = 4
+            ACTIVATE_DEFAULT_EPS_BEARER_CONTEXT_REQUEST
+                EPS_QoS
+                    QCI = (9)QCI 9
+                Access_point_name = CTNB
+                PDN_Address
+                    PDNTypeValue = (1)IPv4
+                    PDN_Address = 10.39.46.106
+                APN_AMBR
+                    APN_AMBR_DL = (200)kbps
+                    APN_AMBR_UL = (200)kbps
+                Protocol_configuration_options
+                    ConfigurationProtocol = (0)PPP for use with IP PDP type, or EPS without use of PPP
+                    ProtocolID = 32801
+                    ProtocolLength = 16
+                    ProtocolContents = 0x030000108106DA0404048306DA020202
+                    ProtocolID = 13
+                    ProtocolLength = 4
+                    ProtocolContents = 0xDA040404
+                    ProtocolID = 5
+                    ProtocolLength = 1
+                    ProtocolContents = 0x02
+                ctrl_plane_only_ind_incl = 1
+                Ctr_plane_only_ind
+                    CPOI = 1

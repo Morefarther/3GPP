@@ -1,0 +1,29 @@
+L->EMM Information
+    L3Message
+        dir = DOWNLINK
+        message
+            ProtocolDiscriminator = 7
+            SecurityHeaderType = 0
+            EMM_INFORMATION
+                Full_name_for_network
+                    coding_scheme = (0)Cell Broadcast data coding scheme
+                    AddCI = (0)The MS should not add the letters for the Country's Initials to the text string
+                    Numberofsparebitsinlastoctet = (0)this field carries no information about the number of spare bits in octet n
+                    TextString = 0x0000000000
+                Short_name_for_network
+                    coding_scheme = (0)Cell Broadcast data coding scheme
+                    AddCI = (0)The MS should not add the letters for the Country's Initials to the text string
+                    Numberofsparebitsinlastoctet = (0)this field carries no information about the number of spare bits in octet n
+                    TextString = 0x0000000000
+                Local_time_zone
+                    TimeZone = 35
+                UniversalTime_and_localTimeZone
+                    Year = 2018
+                    Month = 3
+                    Day = 27
+                    Hour = 1
+                    Minute = 7
+                    Second = 50
+                    TimeZone = 35
+                Network_daylight_saving_time
+                    value = (0)No adjustment for Daylight Saving Time

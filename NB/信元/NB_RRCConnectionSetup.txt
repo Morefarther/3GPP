@@ -1,0 +1,38 @@
+L->RRCConnectionSetup NB
+    DL-CCCH-Message-NB
+        message
+            c1
+                rrcConnectionSetup-r13
+                    rrc-TransactionIdentifier = 2
+                    criticalExtensions
+                        c1
+                            rrcConnectionSetup-r13
+                                radioResourceConfigDedicated-r13
+                                    srb-ToAddModList-r13
+                                        SRB-ToAddMod-NB-r13
+                                            rlc-Config-r13
+                                                explicitValue
+                                                    am
+                                                        ul-AM-RLC-r13
+                                                            t-PollRetransmit-r13 = ms1000
+                                                            maxRetxThreshold-r13 = t4
+                                                        dl-AM-RLC-r13
+                                            logicalChannelConfig-r13 = defaultValue
+                                    mac-MainConfig-r13
+                                        explicitValue-r13
+                                            ul-SCH-Config-r13
+                                                periodicBSR-Timer-r13 = pp8
+                                                retxBSR-Timer-r13 = pp16
+                                            timeAlignmentTimerDedicated-r13 = infinity
+                                            logicalChannelSR-Config-r13
+                                                setup
+                                                    logicalChannelSR-ProhibitTimer-r13 = pp2
+                                    physicalConfigDedicated-r13
+                                        npdcch-ConfigDedicated-r13
+                                            npdcch-NumRepetitions-r13 = r16
+                                            npdcch-StartSF-USS-r13 = v2
+                                            npdcch-Offset-USS-r13 = zero
+                                        npusch-ConfigDedicated-r13
+                                            ack-NACK-NumRepetitions-r13 = r16
+                                        uplinkPowerControlDedicated-r13
+                                            p0-UE-NPUSCH-r13 = 0

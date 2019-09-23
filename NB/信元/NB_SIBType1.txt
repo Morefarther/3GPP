@@ -1,0 +1,34 @@
+L->SIBType1 NB
+    BCCH-DL-SCH-Message-NB
+        message
+            c1
+                systemInformationBlockType1-r13
+                    hyperSFN-MSB-r13 = 00111001
+                    cellAccessRelatedInfo-r13
+                        plmn-IdentityList-r13
+                            PLMN-IdentityInfo-NB-r13
+                                plmn-Identity-r13
+                                    mcc
+                                        MCC-MNC-Digit = 4
+                                        MCC-MNC-Digit = 6
+                                        MCC-MNC-Digit = 0
+                                    mnc
+                                        MCC-MNC-Digit = 1
+                                        MCC-MNC-Digit = 1
+                                cellReservedForOperatorUse-r13 = notReserved
+                        trackingAreaCode-r13 = 0101000011111010
+                        cellIdentity-r13 = 0101000011100100001101010011
+                        cellBarred-r13 = notBarred
+                        intraFreqReselection-r13 = notAllowed
+                    cellSelectionInfo-r13
+                        q-RxLevMin-r13 = -67
+                        q-QualMin-r13 = -34
+                    p-Max-r13 = 23
+                    freqBandIndicator-r13 = 5
+                    schedulingInfoList-r13
+                        SchedulingInfo-NB-r13
+                            si-Periodicity-r13 = rf256
+                            si-RepetitionPattern-r13 = every4thRF
+                            sib-MappingInfo-r13 = sibType3-NB-r13
+                            si-TB-r13 = b256
+                    si-WindowLength-r13 = ms160

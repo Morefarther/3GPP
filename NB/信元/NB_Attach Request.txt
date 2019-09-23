@@ -1,0 +1,134 @@
+L->Attach Request
+    L3Message
+        dir = UPLINK
+        message
+            ProtocolDiscriminator = 7
+            SecurityHeaderType = 0
+            ATTACH_REQUEST
+                EPS_Attach_Type = (2)combined EPS/IMSI attach
+                NAS_key_set_identifier
+                    TSC = (0)native security context (for KSI_ASME)
+                    NAS_Key_Set_Identifer = (0)possible values for the NAS key set identifier
+                Old_GUTI_Or_IMSI
+                    odd_even_indic = (0)even number of identity digits and also when the GUTI is used
+                    Type_Of_Indetity = (6)GUTI
+                    MCC = 460
+                    MNC = 11
+                    MME_Group_ID = 13057
+                    MME_Code = 3
+                    M_TMSI = 0xD2564A79
+                UE_Network_capability
+                    EEA0 = (1)EPS encryption algorithm EEA0 supported
+                    EEA1 = (1)EPS encryption algorithm 128-EEA1 supported
+                    EEA2 = (1)EPS encryption algorithm 128-EEA2 supported
+                    EEA3 = (1)EPS encryption algorithm EEA3 supported
+                    EEA4 = (0)EPS encryption algorithm EEA4 not supported
+                    EEA5 = (0)EPS encryption algorithm EEA5 not supported
+                    EEA6 = (0)EPS encryption algorithm EEA6 not supported
+                    EEA7 = (0)EPS encryption algorithm EEA7 not supported
+                    EIA0 = (0)EPS integrity algorithm EIA0 not supported
+                    EIA1 = (1)EPS integrity algorithm 128-EIA1 supported
+                    EIA2 = (1)EPS integrity algorithm 128-EIA2 supported
+                    EIA3 = (1)EPS integrity algorithm EIA3 supported
+                    EIA4 = (0)EPS integrity algorithm EIA4 not supported
+                    EIA5 = (0)EPS integrity algorithm EIA5 not supported
+                    EIA6 = (0)EPS integrity algorithm EIA6 not supported
+                    EIA7 = (0)EPS integrity algorithm EIA7 not supported
+                    oct5_inc1
+                        UEA0 = (0)UMTS encryption algorithm UEA0 not supported
+                        UEA1 = (0)UMTS encryption algorithm UEA1 not supported
+                        UEA2 = (0)UMTS encryption algorithm UEA2 not supported
+                        UEA3 = (0)UMTS encryption algorithm UEA3 not supported
+                        UEA4 = (0)UMTS encryption algorithm UEA4 not supported
+                        UEA5 = (0)UMTS encryption algorithm UEA5 not supported
+                        UEA6 = (0)UMTS encryption algorithm UEA6 not supported
+                        UEA7 = (0)UMTS encryption algorithm UEA7 not supported
+                    oct6_inc1
+                        UCS2 = (0)The UE has no preference between the use of the default alphabet and the use of UCS2
+                        UIA1 = (0)UMTS integrity algorithm UIA1 not supported
+                        UIA2 = (0)UMTS integrity algorithm UIA2 not supported
+                        UIA3 = (0)UMTS integrity algorithm UIA3 not supported
+                        UIA4 = (0)UMTS integrity algorithm UIA4 not supported
+                        UIA5 = (0)UMTS integrity algorithm UIA5 not supported
+                        UIA6 = (0)UMTS integrity algorithm UIA6 not supported
+                        UIA7 = (0)UMTS integrity algorithm UIA7 not supported
+                    oct7_inc1
+                        NF = (0)notification procedure not supported
+                        SRVCC = (0)SRVCC from E-UTRAN to cdma2000 1x CS not supported
+                        LCS = (0)LCS notification mechanisms not supported
+                        LPP = (0)LPP not supported
+                        ACC_CSFB = (0)eNodeB-based access class control for CSFB not supported
+                        H_245_ASH = (0)H.245 after SRVCC handover capability not supported
+                        NF = (0)notification procedure not supported
+                        Prose = (0)ProSe not supported
+                    oct8_inc1
+                        Prose_dc = (0)ProSe direct communication not supported
+                        Prose_relay = (0)Acting as a ProSe UE-to-network relay not supported
+                        CP_CIoT = (1)Control plane CIoT EPS optimization supported
+                        UP_CIoT = (0)User plane CIoT EPS optimization not supported
+                        S1_Udata = (0)S1-U data transfer not supported
+                        ERwo_PDN = (0)EMM-REGISTERED without PDN connection not supported
+                        HC_CPCIoT = (0)Header compression for control plane CIoT EPS optimization not supported
+                        ePCO = (0)Extended protocol configuration options IE not supported
+                    oct9_inc1
+                        multipl_eDRB = (0)Multiple DRB not supported
+                        V2X_PC5 = (0)V2X communication over PC5 not supported
+                        Restric_tEC = (0)Restriction on use of enhanced coverage not supported
+                        CP_backoff = (0)back-off timer for transport of user data via the control plane not supported
+                Last_Visited_Registered_TAI
+                    MCC = 460
+                    MNC = 11
+                    TAC = 20730
+                TMSI_Status = (0)no valid TMSI available
+                Mobile_station_classmark2
+                    Revision_Level = (2)Used by mobile stations supporting R99 or later versions of the protocol
+                    ES_IND = (0)Controlled Early Classmark Sending option is not implemented in the MS
+                    A5_1 = (1)encryption algorithm A5/1 not available
+                    RF_Power_capability = (7)reserved
+                    PS_capability = (0)PS capability not present
+                    SS_Screen_Indicator = 1
+                    SM_capability = (1)Mobile station supports mobile terminated point to point SMS
+                    VBS_notification_reception = (0)VBS capability or no notifications wanted
+                    VGCS_notification_reception = (0)VGCS capability or no notifications wanted
+                    FC_Frequency_Capability = 0
+                    CM3 = (1)The MS supports options that are indicated in classmark 3 IE
+                    LCS_VA_capability = (1)location request notification via CS domain not supported
+                    UCS2_treatment = (0)the ME has a preference for the default alphabet over UCS2
+                    SoLSA = (0)The ME does not support SoLSA
+                    CM_Service_Prompt = (1)Network initiated MO CM connection request supported for at least one CM protocol
+                    A5_3 = (1)encryption algorithm A5/3 available
+                    A5_2 = (0)encryption algorithm A5/2 not available
+                add_update_type_incl
+                    Add_update_type = (1)SMS only
+                    Signaling_active = (0)keeping the NAS signalling connection is not required after the completion of the tracking area updating procedure
+                    PNB_CIoT = (1)control plane CIoT EPS optimization
+                Old_GUTI_Type = (0)Native GUTI
+                MS_Network_Feature_Support = (1)MS supports the extended periodic timer in this domain
+                t3324_incl = 0
+                t3412_ext_incl = 0
+                ext_drx_par_incl = 0
+            ESMContainer
+                PDN_CONNECTIVITY_REQUEST
+                    request_type = 1
+                    PDN_type = 1
+                    ESM_Info_Trans_Flag = 1
+                    Protocol_configuration_options
+                        ConfigurationProtocol = (0)PPP for use with IP PDP type, or EPS without use of PPP
+                        ProtocolID = 32801
+                        ProtocolLength = 16
+                        ProtocolContents = 0x01000010810600000000830600000000
+                        ProtocolID = 13
+                        ProtocolLength = 0
+                        ProtocolContents = 0x00
+                        ProtocolID = 10
+                        ProtocolLength = 0
+                        ProtocolContents = 0x00
+                        ProtocolID = 5
+                        ProtocolLength = 0
+                        ProtocolContents = 0x00
+                        ProtocolID = 16
+                        ProtocolLength = 0
+                        ProtocolContents = 0x00
+                        ProtocolID = 17
+                        ProtocolLength = 0
+                        ProtocolContents = 0x00

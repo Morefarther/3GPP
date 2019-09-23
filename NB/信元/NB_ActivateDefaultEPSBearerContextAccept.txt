@@ -1,0 +1,8 @@
+L->ActivateDefaultEPSBearerContextAccept
+    L3Message
+        dir = UPLINK
+        message
+            ProtocolDiscriminator = 2
+            EPSBearerIdentity = 5
+            ProcedureTransactionIdentity = 0
+            ACTIVATE_DEFAULT_EPS_BEARER_CONTEXT_ACCEPT

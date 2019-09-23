@@ -1,0 +1,69 @@
+L->Attach Accept
+    L3Message
+        dir = DOWNLINK
+        message
+            ProtocolDiscriminator = 7
+            SecurityHeaderType = 0
+            ATTACH_ACCEPT
+                EPS_Attach_Result = (1)EPS Only
+                Unit = (2)value is incremented in multiples of decihours
+                TimerValue = 21
+                TAI_List
+                    MCC = 460
+                    MNC = 11
+                    TAC = 20730
+                GUTI
+                    odd_even_indic = (0)even number of identity digits and also when the GUTI is used
+                    Type_Of_Indetity = (6)GUTI
+                    MCC = 460
+                    MNC = 11
+                    MME_Group_ID = 13057
+                    MME_Code = 3
+                    M_TMSI = 0xD2564AE5
+                EMMCause = (18)CS domain not available
+                Emergency_Number_List
+                    EmergSerCateValue = 1
+                    NumDigit = 11015
+                    EmergSerCateValue = 4
+                    NumDigit = 11915
+                EPSNetworkFeatureSupport
+                    EMC_BS = (1)emergency bearer services in S1 mode supported
+                    EPC_LCS = (0)location services via EPC not supported
+                    CS_LCS = (0)no information about support of location services via CS domain is available
+                    ESR_PS = (0)network does not support use of EXTENDED SERVICE REQUEST to request for packet services
+                    IMS_VoPS = (1)IMS voice over PS session in S1 mode supported
+                    ERw_oPDN = (0)EMM-REGISTERED without PDN connection not supported
+                    CP_CIoT = (1)Control plane CIoT EPS optimization supported
+                add_update_result_incl = 0
+                add_update_result
+                    ANBUPCOIT = 0
+                    ANBCPCOIT = 1
+                    AdditionalUpdateResult = (0)no additional information
+                t3412_ext_incl = 0
+                t3324_incl = 0
+                ext_drx_par_incl = 0
+            ESMContainer
+                ACTIVATE_DEFAULT_EPS_BEARER_CONTEXT_REQUEST
+                    EPS_QoS
+                        QCI = (9)QCI 9
+                    Access_point_name = CTNB
+                    PDN_Address
+                        PDNTypeValue = (1)IPv4
+                        PDN_Address = 10.39.46.106
+                    APN_AMBR
+                        APN_AMBR_DL = (200)kbps
+                        APN_AMBR_UL = (200)kbps
+                    Protocol_configuration_options
+                        ConfigurationProtocol = (0)PPP for use with IP PDP type, or EPS without use of PPP
+                        ProtocolID = 32801
+                        ProtocolLength = 16
+                        ProtocolContents = 0x030000108106DA0404048306DA020202
+                        ProtocolID = 13
+                        ProtocolLength = 4
+                        ProtocolContents = 0xDA040404
+                        ProtocolID = 5
+                        ProtocolLength = 1
+                        ProtocolContents = 0x02
+                    ctrl_plane_only_ind_incl = 1
+                    Ctr_plane_only_ind
+                        CPOI = 1

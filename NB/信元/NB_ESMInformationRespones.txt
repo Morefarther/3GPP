@@ -1,0 +1,10 @@
+L->ESMInformationResponse
+    L3Message
+        dir = UPLINK
+        message
+            ProtocolDiscriminator = 2
+            EPSBearerIdentity = 0
+            ProcedureTransactionIdentity = 4
+            ESM_INFORMATION_RESPONSE
+                Access_point_name
+                    Access_point_name = CTNB

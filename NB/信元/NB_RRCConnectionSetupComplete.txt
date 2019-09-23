@@ -1,0 +1,13 @@
+L->RRCConnectionSetupComplete NB
+    UL-DCCH-Message-NB
+        message
+            c1
+                rrcConnectionSetupComplete-r13
+                    rrc-TransactionIdentifier = 2
+                    criticalExtensions
+                        rrcConnectionSetupComplete-r13
+                            selectedPLMN-Identity-r13 = 1
+                            registeredMME-r13
+                                mmegi = 0011001100000001
+                                mmec = 00000011
+                            dedicatedInfoNAS-r13 = 176A2162CA0C0741020BF664F011330103D2564A7907F0700000000400002A0204D011D127238080211001000010810600000000830600000000000D00000A000005000010000011005264F01150FA9011034F18A6F5E0C1

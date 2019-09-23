@@ -1,0 +1,10 @@
+L->RRCConnectionRelease NB
+    DL-DCCH-Message-NB
+        message
+            c1
+                rrcConnectionRelease-r13
+                    rrc-TransactionIdentifier = 3
+                    criticalExtensions
+                        c1
+                            rrcConnectionRelease-r13
+                                releaseCause-r13 = other

@@ -1,0 +1,105 @@
+L->TAU Request
+    L3Message
+        dir = UPLINK
+        message
+            ProtocolDiscriminator = 7
+            SecurityHeaderType = 0
+            TRACKING_AREA_UPDATE_REQUEST
+                ActiveFlag = (0)No bearer establishment requested
+                EPSUpdateTypeValue = (0)TA updating
+                NAS_key_Set_identifier
+                    TSC = (0)native security context (for KSI_ASME)
+                    NAS_Key_Set_Identifer = (0)possible values for the NAS key set identifier
+                Old_GUTI
+                    odd_even_indic = (0)even number of identity digits and also when the GUTI is used
+                    Type_Of_Indetity = (6)GUTI
+                    MCC = 460
+                    MNC = 11
+                    MME_Group_ID = 13057
+                    MME_Code = 3
+                    M_TMSI = 0xD2564AE5
+                UE_Network_Capability
+                    EEA0 = (1)EPS encryption algorithm EEA0 supported
+                    EEA1 = (1)EPS encryption algorithm 128-EEA1 supported
+                    EEA2 = (1)EPS encryption algorithm 128-EEA2 supported
+                    EEA3 = (1)EPS encryption algorithm EEA3 supported
+                    EEA4 = (0)EPS encryption algorithm EEA4 not supported
+                    EEA5 = (0)EPS encryption algorithm EEA5 not supported
+                    EEA6 = (0)EPS encryption algorithm EEA6 not supported
+                    EEA7 = (0)EPS encryption algorithm EEA7 not supported
+                    EIA0 = (0)EPS integrity algorithm EIA0 not supported
+                    EIA1 = (1)EPS integrity algorithm 128-EIA1 supported
+                    EIA2 = (1)EPS integrity algorithm 128-EIA2 supported
+                    EIA3 = (1)EPS integrity algorithm EIA3 supported
+                    EIA4 = (0)EPS integrity algorithm EIA4 not supported
+                    EIA5 = (0)EPS integrity algorithm EIA5 not supported
+                    EIA6 = (0)EPS integrity algorithm EIA6 not supported
+                    EIA7 = (0)EPS integrity algorithm EIA7 not supported
+                    oct5_inc1
+                        UEA0 = (0)UMTS encryption algorithm UEA0 not supported
+                        UEA1 = (0)UMTS encryption algorithm UEA1 not supported
+                        UEA2 = (0)UMTS encryption algorithm UEA2 not supported
+                        UEA3 = (0)UMTS encryption algorithm UEA3 not supported
+                        UEA4 = (0)UMTS encryption algorithm UEA4 not supported
+                        UEA5 = (0)UMTS encryption algorithm UEA5 not supported
+                        UEA6 = (0)UMTS encryption algorithm UEA6 not supported
+                        UEA7 = (0)UMTS encryption algorithm UEA7 not supported
+                    oct6_inc1
+                        UCS2 = (0)The UE has no preference between the use of the default alphabet and the use of UCS2
+                        UIA1 = (0)UMTS integrity algorithm UIA1 not supported
+                        UIA2 = (0)UMTS integrity algorithm UIA2 not supported
+                        UIA3 = (0)UMTS integrity algorithm UIA3 not supported
+                        UIA4 = (0)UMTS integrity algorithm UIA4 not supported
+                        UIA5 = (0)UMTS integrity algorithm UIA5 not supported
+                        UIA6 = (0)UMTS integrity algorithm UIA6 not supported
+                        UIA7 = (0)UMTS integrity algorithm UIA7 not supported
+                    oct7_inc1
+                        NF = (0)notification procedure not supported
+                        SRVCC = (0)SRVCC from E-UTRAN to cdma2000 1x CS not supported
+                        LCS = (0)LCS notification mechanisms not supported
+                        LPP = (0)LPP not supported
+                        ACC_CSFB = (0)eNodeB-based access class control for CSFB not supported
+                        H_245_ASH = (0)H.245 after SRVCC handover capability not supported
+                        NF = (0)notification procedure not supported
+                        Prose = (0)ProSe not supported
+                    oct8_inc1
+                        Prose_dc = (0)ProSe direct communication not supported
+                        Prose_relay = (0)Acting as a ProSe UE-to-network relay not supported
+                        CP_CIoT = (1)Control plane CIoT EPS optimization supported
+                        UP_CIoT = (0)User plane CIoT EPS optimization not supported
+                        S1_Udata = (0)S1-U data transfer not supported
+                        ERwo_PDN = (0)EMM-REGISTERED without PDN connection not supported
+                        HC_CPCIoT = (0)Header compression for control plane CIoT EPS optimization not supported
+                        ePCO = (0)Extended protocol configuration options IE not supported
+                    oct9_inc1
+                        multipl_eDRB = (0)Multiple DRB not supported
+                        V2X_PC5 = (0)V2X communication over PC5 not supported
+                        Restric_tEC = (0)Restriction on use of enhanced coverage not supported
+                        CP_backoff = (0)back-off timer for transport of user data via the control plane not supported
+                Last_visited_registered_TAI
+                    MCC = 460
+                    MNC = 11
+                    TAC = 20730
+                EPS_bear_context_status
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (1) the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-ACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                m_Additional_Update_Type = 4
+                Old_GUTI_Type = (0)Native GUTI
+                MS_Network_Feature_Support = (1)MS supports the extended periodic timer in this domain
+                t3412_ext_incl = 0
+                t3324_incl = 0
+                ext_drx_par_incl = 0

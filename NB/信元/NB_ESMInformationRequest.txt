@@ -1,0 +1,8 @@
+L->ESMInformationRequest
+    L3Message
+        dir = DOWNLINK
+        message
+            ProtocolDiscriminator = 2
+            EPSBearerIdentity = 0
+            ProcedureTransactionIdentity = 4
+            ESM_INFORMATION_REQUEST

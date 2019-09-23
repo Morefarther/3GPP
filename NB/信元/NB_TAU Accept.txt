@@ -1,0 +1,46 @@
+L->TAU Accept
+    L3Message
+        dir = DOWNLINK
+        message
+            ProtocolDiscriminator = 7
+            SecurityHeaderType = 0
+            TRACKING_AREA_UPDATE_ACCEPT
+                EPSUpdateResult = (0)TA updated
+                TAIList
+                    MCC = 460
+                    MNC = 11
+                    TAC = 20730
+                EPS_Bear_Context_Status
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (1) the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-ACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                    EBI = (0)the ESM state of the corresponding EPS bearer context is BEARER CONTEXT-INACTIVE
+                Emergency_Number_List
+                    EmergSerCateValue = 1
+                    NumDigit = 11015
+                    EmergSerCateValue = 4
+                    NumDigit = 11915
+                EPSNetworkFeatureSupport
+                    EMC_BS = (1)emergency bearer services in S1 mode supported
+                    EPC_LCS = (0)location services via EPC not supported
+                    CS_LCS = (0)no information about support of location services via CS domain is available
+                    ESR_PS = (0)network does not support use of EXTENDED SERVICE REQUEST to request for packet services
+                    IMS_VoPS = (1)IMS voice over PS session in S1 mode supported
+                    ERw_oPDN = (0)EMM-REGISTERED without PDN connection not supported
+                    CP_CIoT = (1)Control plane CIoT EPS optimization supported
+                AdditionalUpdateResult = 0
+                t3324_incl = 0
+                t3412_incl = 0
+                ext_drx_par_incl = 0

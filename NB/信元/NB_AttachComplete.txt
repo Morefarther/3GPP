@@ -1,0 +1,8 @@
+L->Attach Complete
+    L3Message
+        dir = UPLINK
+        message
+            ProtocolDiscriminator = 7
+            SecurityHeaderType = 0
+            ATTACH_COMPLETE
+            ESMContainer = ACTIVATE_DEFAULT_EPS_BEARER_CONTEXT_ACCEPT

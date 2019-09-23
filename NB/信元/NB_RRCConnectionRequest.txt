@@ -1,0 +1,12 @@
+L->RRCConnectionRequest NB
+    UL-CCCH-Message-NB
+        message
+            c1
+                rrcConnectionRequest-r13
+                    criticalExtensions
+                        rrcConnectionRequest-r13
+                            ue-Identity-r13
+                                randomValue = 0110100010000111101000111111100110100100
+                            establishmentCause-r13 = mo-Signalling
+                            multiToneSupport-r13 = true
+                            spare = 0000000000000000000000
